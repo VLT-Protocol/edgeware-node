@@ -1,7 +1,7 @@
 version: '3.3'
 services:
   edgeware:
-    image: hicommonwealth/edgeware:v3.2.0
+    image: edgeware:latest
     logging:
       driver: "json-file"
       options:

@@ -20,7 +20,7 @@ COPY . /edgeware
 # rustup is down for now -- using the raw github page instead
 RUN curl https://raw.githubusercontent.com/rust-lang/rustup/master/rustup-init.sh -sSf | sh -s -- -y && \
     export PATH=$PATH:$HOME/.cargo/bin && \
-    cd source && \
+    cd edgeware && \
     git submodule update --init --recursive && \
     rustup default stable && \
     rustup uninstall nightly && \	
